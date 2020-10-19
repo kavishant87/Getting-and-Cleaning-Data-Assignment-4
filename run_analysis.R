@@ -70,5 +70,4 @@ names(extractData)
 lastData <- aggregate(. ~Subject + activity, extractData, mean)
 lastData <- lastData[order(lastData$Subject,lastData$activity),]
 write.table(lastData, "lastData.txt", row.name = FALSE)
-str(lastData)
-lastData
+
